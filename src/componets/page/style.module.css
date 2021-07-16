@@ -1,0 +1,8 @@
+.pageWrapper {
+    max-width: 375px;
+    max-height: 761px;
+    height: 100vh;
+    background: url("../../assets/img/bg.jpg") center / cover no-repeat;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+}
