@@ -1,0 +1,59 @@
+.orderItem {
+    background: #ffffff;
+    border-radius: 8px;
+    max-width: 206px;
+    flex: 0 0 206px;
+}
+.orderItem:not(:last-child) {
+    margin-right: 12px;
+}
+.orderTop {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 13px 0 13px 12px;
+    min-height: 72px;
+}
+.orderNumber {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #000000;
+}
+.orderPrice {
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #b5f968;
+    -webkit-text-stroke: 1px #6e9143;
+    text-shadow: 1px 1px 0 #6e9143, -1px -1px 0 #6e9143, 1px -1px 0 #6e9143, -1px 1px 0 #6e9143, 1px 1px 0 #6e9143;
+}
+
+.orderDate {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.408px;
+    color: #5364ff;
+    flex: 1 1 100%;
+    margin-top: 5px;
+}
+.orderBottom {
+    padding: 10px 12px;
+}
+.orderInfo {
+    margin: 0;
+    padding: 0;
+}
+.orderInfoItem {
+    list-style: none;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.408px;
+    color: #888e99;
+}
+.orderInfoItem::before {
+    content: "∙ ";
+}

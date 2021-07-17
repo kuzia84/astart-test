@@ -3,7 +3,7 @@ import { orderListState } from "../../api/dto/orderList.g";
 import { fetchOrdersList } from "./orderListThunk";
 
 const initialState: orderListState = {
-  orderListIsLoading: false,
+  orderListIsLoading: true,
   orderListResult: [],
   orderListError: null,
 };

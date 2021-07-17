@@ -20,3 +20,14 @@ export type orderListState = {
   orderListResult: ordersList;
   orderListError: {} | null;
 };
+
+export type orderListComponentProps = {
+  orderList: ordersList
+}
+
+export type orderListItemComponetProps = {
+  number: number;
+  sale: number;
+  date: string;
+  goods: good[];
+}
