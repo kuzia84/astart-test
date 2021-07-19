@@ -1,20 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { appState } from "../../api/dto/app.g";
 
-const initialState = {
-  sidebarShow: false,
+const initialState: appState = {
+  openOrder: false,
+  openOrderId: "",
 };
 
 const appSlise = createSlice({
-  name: "sidebarState",
+  name: "app",
   initialState,
   reducers: {
     reset: (state) => initialState,
-    setSidebrSate: (state, action) => {
-      state.sidebarShow = action.payload;
+    setOpenOrder: (state, action) => {
+      state.openOrder = action.payload;
+    },
+    setOpenOrderId: (state, action) => {
+      state.openOrderId = action.payload;
     },
   },
 });
 
-export const { setSidebrSate } = appSlise.actions;
+export const { setOpenOrder, setOpenOrderId } = appSlise.actions;
 
 export const appReducer = appSlise.reducer;

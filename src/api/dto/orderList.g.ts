@@ -9,7 +9,7 @@ export type order = {
 };
 
 export type good = {
-  id: string;
+  id?: string;
   name: string;
   price: number;
   count: number;
@@ -22,12 +22,5 @@ export type orderListState = {
 };
 
 export type orderListComponentProps = {
-  orderList: ordersList
-}
-
-export type orderListItemComponetProps = {
-  number: number;
-  sale: number;
-  date: string;
-  goods: good[];
-}
+  orderList: ordersList;
+};

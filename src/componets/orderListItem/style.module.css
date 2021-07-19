@@ -3,6 +3,7 @@
     border-radius: 8px;
     max-width: 206px;
     flex: 0 0 206px;
+    cursor: pointer;
 }
 .orderItem:not(:last-child) {
     margin-right: 12px;

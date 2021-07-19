@@ -5,6 +5,10 @@
     border-radius: 16px 16px 0px 0px;
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 .title {
     font-weight: 500;
@@ -34,4 +38,17 @@
     list-style: none;
     display: flex;
     overflow: auto;
+    padding-bottom: 37px;
+    scrollbar-width: thin;
+    scrollbar-color: #000 transparent;
+}
+.orderList::-webkit-scrollbar {
+    height: 5px;
+}
+.orderList::-webkit-scrollbar-track {
+    background: transparent;
+}
+.orderList::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 20px;
 }
