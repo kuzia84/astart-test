@@ -35,23 +35,27 @@ export const OpenedOrder: React.FC<order> = ({
   });
   return (
     <div className={cn(s.wrapper, { [s.active]: openOrder })}>
-      <div className={s.top}>
-        <div className={s.topText}>
-          <div className={s.title}>Заказ {number}</div>
-          <div className={s.date}>{orderDate}</div>
+      <div className={s.order}>
+        <div className={s.top}>
+          <div className={s.topText}>
+            <div className={s.title}>Заказ {number}</div>
+            <div className={s.date}>{orderDate}</div>
+          </div>
+          <button className={s.close} onClick={handleClick}></button>
         </div>
-        <button className={s.close} onClick={handleClick}></button>
+        <div className={s.name}>
+          Товар
+          <div className={s.nameDesc}>Название наименование товара</div>
+        </div>
+        <ul className={s.goodsList}>{goodsListContent}</ul>
+        <div className={s.discount}>
+          Скидка по заказу составила {100 - sale} %
+        </div>
+        <div className={s.totolPrice}>ИТОГО : {totalPrice}</div>
+        <div className={s.note}>
+          Дата выдачи заказа 10 дней с момента оплаты
+        </div>
       </div>
-      <div className={s.name}>
-        Товар
-        <div className={s.nameDesc}>Название наименование товара</div>
-      </div>
-      <ul className={s.goodsList}>{goodsListContent}</ul>
-      <div className={s.discount}>
-        Скидка по заказу составила {100 - sale} %
-      </div>
-      <div className={s.totolPrice}>ИТОГО : {totalPrice}</div>
-      <div className={s.note}>Дата выдачи заказа 10 дней с момента оплаты</div>
     </div>
   );
 };
